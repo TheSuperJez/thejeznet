@@ -1,0 +1,35 @@
+{
+	"globals": {
+        "_": false
+    },
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended"
+	],
+	"plugins": [
+		"react"
+	],
+	"settings": {
+		"react": {
+		  "pragma": "React",  // Pragma to use, default to "React"
+		  "version": "detect" // React version. "detect" automatically picks the version you have installed.
+		}
+	},
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"env": {
+		"es6": true,
+		"browser": true,
+		"node": true,
+		"jquery": true,
+		"mocha": true
+	},
+	"rules": {
+		"react/jsx-no-target-blank": 0
+	}
+}
