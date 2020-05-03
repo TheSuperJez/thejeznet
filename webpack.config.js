@@ -50,7 +50,7 @@ module.exports = {
             filename: "./style.css"
         }),
 		new CopyWebpackPlugin([
-			{ from: '../images', to: '../public/images', type: 'dir' }
+			{ from: '../images/portfolioimages', to: '../public/images/portfolioimages', type: 'dir' }
 		])
 	],
 	watch: true

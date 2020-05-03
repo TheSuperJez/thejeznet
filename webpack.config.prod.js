@@ -81,33 +81,6 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: "./style.css"
 		}),
-		new ImageminPlugin({
-			bail: false, // Ignore errors on corrupted images
-			cache: true,
-			imageminOptions: {
-				externalImages: {
-					context: 'images', // Important! This tells the plugin where to "base" the paths at
-					sources: 'images/**/*.*',
-					destination: 'dist/images',
-					fileName: '[path][name].[ext]' // (filePath) => filePath.replace('jpg', 'webp') is also possible
-				  },
-				plugins: [
-					["gifsicle", { interlaced: true }],
-					["jpegtran", { progressive: true }],
-					["optipng", { optimizationLevel: 5 }],
-					[
-						"svgo",
-						{
-							plugins: [
-								{
-									removeViewBox: false
-								}
-							]
-						}
-					]
-				]
-			}
-		}),
 		new webpack.IgnorePlugin({
 			resourceRegExp: /^\.\/locale$/,
 			contextRegExp: /moment$/

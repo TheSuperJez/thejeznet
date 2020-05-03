@@ -4,17 +4,19 @@
   "description": "Aplicacion ejemplo",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all --parallel open:src lint:watch",
+    "start": "npm run create-dev-resources && npm-run-all --parallel open:src lint:watch",
     "open:src": "node_modules/.bin/webpack-dev-server --info true",
     "lint": "node_modules/.bin/esw --color src/**",
     "lint:watch": "npm run lint -- --watch",
     "build-web": "./node_modules/.bin/webpack --config webpack.config.js --progress -p",
-    "build-web-prod": "./node_modules/.bin/webpack --config webpack.config.prod.js --progress -p",
+    "build-web-prod": "npm-run-all create-prod-resources && ./node_modules/.bin/webpack --config webpack.config.prod.js --progress -p",
     "test": "NODE_ENV=test ./node_modules/.bin/_mocha --compilers js:babel-core/register src/test/**/*.test.js",
     "test:watch": "npm run test -- --watch",
     "coverage": "NODE_ENV=test ./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover ./node_modules/.bin/_mocha  -- --compilers js:babel-core/register src/**/*.test.js",
     "doc": "./node_modules/.bin/yuidoc .",
-    "run-prod": "python -m SimpleHTTPServer"
+    "run-prod": "npm-run-all build-web-prod && ./node_modules/http-server/bin/http-server dist/",
+    "create-dev-resources": "rm -rf public/ && mkdir public && cp static/root/*.* public/ && cp -R static/js public/js && mkdir public/images && cp -R static/images/portfolioimages public/images/portfolioimages",
+    "create-prod-resources": "rm -rf dist/ && mkdir dist && cp static/root/*.* dist/ && cp -R static/js dist/js && mkdir dist/images && cp -R static/images/portfolioimages dist/images/portfolioimages"
   },
   "engines": {
     "node": "13.13.0",
@@ -65,6 +67,7 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-watch": "^6.0.1",
     "file-loader": "^6.0.0",
+    "http-server": "^0.12.3",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-jpegtran": "^6.0.0",
     "imagemin-mozjpeg": "^8.0.0",
