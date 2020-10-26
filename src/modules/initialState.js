@@ -24,16 +24,20 @@ let initialState = new Immutable.Map()
 		.set('workList', new Immutable.List()
 			.push(new Work({
 				nombre: 'Globant',
-				posicion: 'Software Engineer',
+				posicion: 'Software Designer',
 				de: 'September 2018 ',
 				a: 'Actual',
-				descripcion: ['Web UI Development',
-					'Tech lead',
-					'React, Redux, SASS, GraphQL Web Application Development, HandleBars, Node',
+				descripcion: ['UI Engineering',
+					'Talks for customers and internal users (Frontend/Backend stacks) (English/Spanish)',
+					'Work remotely for US companies such as Express (OH), LendingClub (SFO)',
+					'Technical leader and team coordination',
+					'Mentoring',
+					'Web Application Development (React, Redux, SASS, GraphQL Web Application Development, HandleBars, Node)',
 					'SCRUM',
-					'Fullstack Node Developer',
+					'Fullstack Developer',
 					'Unit Test',
-					'Java'
+					'Java Web/API Development',
+					'Web Accesilibity design'
 				]
 			}))
 			.push(new Work({
@@ -64,7 +68,7 @@ let initialState = new Immutable.Map()
 				descripcion: ['SCRUM project team management', 'Tech lead for software projects',
 					'Provide technical experience and direction in the design, development and integration of systems.',
 					'Technical training and design of certification courses.',
-					'Product presentations with customers, technical demonstrations and economyc proposal development.',
+					'Product presentations with customers, technical demonstrations and economic proposal development.',
 					'Provide experience in innovation for the design of software products.',
 					'Design of products that uses Machine Learning algorithms.',
 					'Promote software products in easy-to-understand terms for marketing purposes (magazines, brochures, social media, videos, etc.).',
@@ -158,6 +162,21 @@ let initialState = new Immutable.Map()
 			}))
 		)
 		.set('studyList', new Immutable.List()
+			.push(new Study({
+				nombre: 'Course',
+				grado: 'Coding Interview Bootcamp: Algorithms + Data Structure',
+				fecha: 'Dic. 2019'
+			}))
+			.push(new Study({
+				nombre: 'Certification Online',
+				grado: 'GraphQL with React',
+				fecha: 'Dic. 2019'
+			}))
+			.push(new Study({
+				nombre: 'Certification',
+				grado: 'Web Accesilibity Testing / Development ( Acámica )',
+				fecha: 'Aug. 2018'
+			}))
 			.push(new Study({
 				nombre: 'Certification',
 				grado: 'Aptech C# Programmer. ( A Grade Certification )',
