@@ -32,7 +32,7 @@ const Skills = ({skillList}) => {
 						{'Profile'}
 					</h1>
 					<p>
-						{'IT professional with 10 years experience as lead programmer in Web, desktop, ' +
+						{'IT professional with 14 years experience as lead programmer in Web, desktop, ' +
 						'and mobile applications in many platforms such as Java, Javascript and .NET for enterprise and innovative startups. Also, ' +
 						'i am instructor for corporative training and certification courses with excellent written and oral communication skills; ' +
 						'capable of explaining complex software issues in easy-to-understand terms. I also have M.Sc (Computer Science) from Universidad del Estado de México. ' +

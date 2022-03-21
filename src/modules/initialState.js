@@ -13,15 +13,25 @@ let initialState = new Immutable.Map()
 			.push(new Menu({ text: 'blog', target: '_blank', href: 'http://thesuperjez.blogspot.com'}))
 			)
 		.set('skillList', new Immutable.List()
-			.push(new Skill({ title: 'ECMAScript 6', percent: '90%' }))
-			.push(new Skill({ title: 'React/Redux', percent: '90%' }))
-			.push(new Skill({ title: 'Java/Web/Spring Hibernate', percent: '90%' }))
-			.push(new Skill({ title: 'Node', percent: '80%' }))
+			.push(new Skill({ title: 'UI Enginering', percent: '90%' }))
+			.push(new Skill({ title: 'Java/Python Backend Engineering', percent: '90%' }))
+			.push(new Skill({ title: 'Node Backend Engineering', percent: '90%' }))
+			.push(new Skill({ title: 'Java/Electron/C# Desktop Engineering', percent: '80%' }))
 			.push(new Skill({ title: 'C#/.NET Platform', percent: '80%' }))
-			.push(new Skill({ title: 'Relational Databases', percent: '90%' }))
-			.push(new Skill({ title: 'Non-Relational Databases', percent: '80%' }))
+			.push(new Skill({ title: 'Databases', percent: '80%' }))
+			.push(new Skill({ title: 'React Native/Android Native Mobile Engineering', percent: '80%' }))
 		)
 		.set('workList', new Immutable.List()
+			.push(new Work({
+				nombre: 'Independant Consulting Services',
+				posicion: 'Instructor',
+				de: 'September 2020 ',
+				a: 'Actual',
+				descripcion: ['Courses delivery',
+					'Certified Secure Software Lifecycle Professional (CSSLP) Course for 5 closed groups',
+					'SAP Crystal Reports for Visual Studio Course for a closed group'
+				]
+			}))
 			.push(new Work({
 				nombre: 'Globant',
 				posicion: 'Software Designer',
@@ -333,8 +343,8 @@ let initialState = new Immutable.Map()
 			.push(new Portfolio({
 				id: 'trabajo-12',
 				cat: 'catText',
-				img: 'images/portfolioImages/article.png',
-				imgLarge: 'images/portfolioImages/article.png',
+				img: 'images/portfolioImages/article.jpg',
+				imgLarge: 'images/portfolioImages/article.jpg',
 				title: 'Magazine article',
 				description: 'Technical Magazine article'
 			}))
