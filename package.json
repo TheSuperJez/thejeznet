@@ -15,7 +15,7 @@
     "coverage": "NODE_ENV=test ./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover ./node_modules/.bin/_mocha  -- --compilers js:babel-core/register src/**/*.test.js",
     "doc": "./node_modules/.bin/yuidoc .",
     "run-prod": "npm-run-all build-web-prod && ./node_modules/http-server/bin/http-server dist/",
-    "create-dev-resources": "rm -rf dev-public/ && mkdir dev-public && cp static/root/*.* dev-public/ && cp -R static/js dev-public/js && mkdir dev-public/images && cp -R static/images/portfolioImages dev-public/images/portfolioImages",
+    "create-dev-resources": "rm -rf dev-dist/ && mkdir dev-dist && cp static/root/*.* dev-dist/ && cp -R static/js dev-dist/js && mkdir dev-dist/images && cp -R static/images/portfolioImages dev-dist/images/portfolioImages",
     "create-prod-resources": "rm -rf dist/ && mkdir dist && cp static/root/*.* dist/ && cp -R static/js dist/js && mkdir dist/images && cp -R static/images/portfolioImages dist/images/portfolioImages"
   },
   "engines": {
