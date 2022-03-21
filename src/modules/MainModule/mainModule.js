@@ -2,7 +2,6 @@ import { Form } from './stateDescriptor';
 import initialState from '../initialState';
 import {sendMail as mail} from '../../api';
 export const CHANGE_FORM_INPUT = 'CHANGE_FORM_INPUT';
-export const SEND_MAIL = 'SEND_MAIL';
 
 export default function reducer(state = initialState.get('mainModule'), action) {
 	switch (action.type) {

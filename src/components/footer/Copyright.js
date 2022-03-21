@@ -7,8 +7,13 @@ class Copyright extends Component {
 				<div className="holder960 clearfix">
 					<ul>
 						<li>
-							<div style={{ "text-align": "center", float: 'left' }}><a href="http://www.websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
-								<img style={{ border: '0px solid' }} alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=281407" /></a></div>
+							<div style={{ "text-align": "center", float: 'left' }}>
+								<a href="https://websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
+									<img style={{border: 0, display: 'inline'}} alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=299" />
+								</a>
+								<br />
+								<a href='https://websmultimedia.com/contador-de-visitas-gratis'>Contador de visitas</a>
+							</div>
 						</li>
 					</ul>
 
