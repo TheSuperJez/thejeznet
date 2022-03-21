@@ -16,7 +16,7 @@ module.exports = {
 	devServer: {
 		inline: true,
 		port: 3333,
-		contentBase: 'public'
+		contentBase: 'dev-public'
 	},
 	module: {
 		rules: [{
@@ -50,7 +50,7 @@ module.exports = {
             filename: "./style.css"
         }),
 		new CopyWebpackPlugin([
-			{ from: '../images/portfolioimages', to: '../public/images/portfolioimages', type: 'dir' }
+			{ from: '../images/portfolioImages', to: '../dev-public/images/portfolioImages', type: 'dir' }
 		])
 	],
 	watch: true
